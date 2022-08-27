@@ -1,0 +1,290 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1440px;
+    background-color: hsl(30, 38%, 92%)
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 634px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    width: 35%;
+    height: 400px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.image img {
+    height: 400px;
+}
+
+.text1 {
+    display: flex;
+    justify-content: center;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 85%;
+    justify-content: space-evenly;
+}
+
+.text2 .perfume, p, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.perfume {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+.title { 
+    font-family: 'Fraunces', serif;
+    line-height: 33px;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.text {
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    
+}
+
+.price1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+
+.oldPrice {
+    margin-left: 10%;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 12px;
+} 
+
+.button {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+}
+
+button {
+    width: 98%;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button img {
+    margin-right: 8px;
+    height: 15px;
+}
+
+
+button:active {
+    background-color: hsl(158, 37%, 19%);
+}
+
+/* Responsive design */
+
+@media (max-width: 375px) {
+    body {
+        width: 100%;
+        display: flex;
+        height: 700px;
+        justify-content: center;
+        background-color: hsl(30, 38%, 92%)
+    }
+    .container1 {
+        width: 375px;
+        height: 700px;
+    }
+    .card {
+        width: 90%;
+        height: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image {
+        background: lightseagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text2 {
+        height: 400px;
+        width: 85%;
+        justify-content: space-evenly;
+    }
+    .title {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .price1 {
+        font-size: 30px;
+    }
+
+    .button {
+        height: 12%;
+    }
+}
+
+@media (max-width: 875px) {
+    body {
+        width: 100%;
+        display: flex;
+        height: 700px;
+        justify-content: center;
+        background-color: hsl(30, 38%, 92%)
+    }
+    .container1 {
+        width: 375px;
+        height: 700px;
+    }
+    .card {
+        width: 90%;
+        height: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image {
+        background: lightseagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text2 {
+        height: 400px;
+        width: 85%;
+        justify-content: space-evenly;
+    }
+    .title {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .price1 {
+        font-size: 30px;
+    }
+
+    .button {
+        height: 12%;
+    }
+}
+
+@media (min-width: 876px) {
+    body {
+        width: 100%;
+        justify-content: center;
+        background-color: hsl(30, 38%, 92%)
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .card {
+        background-color: hsl(0, 0%, 100%);
+        width: 500px;
+        height: 400px;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 1312px) {
+    body {
+        width: 100%;
+        justify-content: center;
+        background-color: hsl(30, 38%, 92%)
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .card {
+        background-color: hsl(0, 0%, 100%);
+        width: 35%;
+        height: 400px;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        align-items: center;
+    }
+
+}
+
